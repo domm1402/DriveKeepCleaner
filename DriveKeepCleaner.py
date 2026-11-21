@@ -34,7 +34,7 @@ class App:
   cols=("path","type","status")
   self.tree=ttk.Treeview(self.root,columns=cols,show="headings")
   self.tree.heading("path",text="Item"); self.tree.heading("type",text="Type"); self.tree.heading("status",text="Action")
-  self.tree.column("path",width=580); self.tree.column("type",width=100); self.tree.column("status,width",width=120)
+  self.tree.column("path",width=580); self.tree.column("type",width=100); self.tree.column("status",width=120)
   self.tree.pack(fill="both",expand=True,padx=18,pady=8)
   bottom=tk.Frame(self.root,bg="#11151d"); bottom.pack(fill="x",pad=12)
   ttk.Button(bottom,text="Preview cleanup",command=self.scan).pack(side="left",pad=5)
